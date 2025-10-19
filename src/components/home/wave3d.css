@@ -1,0 +1,142 @@
+.wave-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(45deg, 
+    rgba(74, 144, 226, 0.1), 
+    rgba(80, 200, 120, 0.1), 
+    rgba(255, 107, 107, 0.1),
+    rgba(255, 159, 67, 0.1)
+  );
+  background-size: 400% 400%;
+  animation: waveAnimation 8s ease-in-out infinite;
+  border-radius: 50%;
+  transform-origin: center;
+}
+
+.wave1 {
+  animation-delay: 0s;
+  animation-duration: 8s;
+  opacity: 0.8;
+  transform: scale(1) rotate(0deg);
+}
+
+.wave2 {
+  animation-delay: -2s;
+  animation-duration: 10s;
+  opacity: 0.6;
+  transform: scale(1.2) rotate(45deg);
+  background: linear-gradient(135deg, 
+    rgba(138, 43, 226, 0.1), 
+    rgba(30, 144, 255, 0.1), 
+    rgba(255, 20, 147, 0.1)
+  );
+}
+
+.wave3 {
+  animation-delay: -4s;
+  animation-duration: 12s;
+  opacity: 0.4;
+  transform: scale(1.5) rotate(90deg);
+  background: linear-gradient(225deg, 
+    rgba(0, 191, 255, 0.1), 
+    rgba(144, 238, 144, 0.1), 
+    rgba(255, 182, 193, 0.1)
+  );
+}
+
+.wave4 {
+  animation-delay: -6s;
+  animation-duration: 14s;
+  opacity: 0.3;
+  transform: scale(1.8) rotate(135deg);
+  background: linear-gradient(315deg, 
+    rgba(123, 104, 238, 0.1), 
+    rgba(72, 209, 204, 0.1), 
+    rgba(255, 215, 0, 0.1)
+  );
+}
+
+@keyframes waveAnimation {
+  0%, 100% {
+    transform: scale(1) rotate(0deg) translateY(0px);
+    background-position: 0% 50%;
+  }
+  25% {
+    transform: scale(1.1) rotate(90deg) translateY(-10px);
+    background-position: 100% 50%;
+  }
+  50% {
+    transform: scale(1.2) rotate(180deg) translateY(0px);
+    background-position: 100% 100%;
+  }
+  75% {
+    transform: scale(1.1) rotate(270deg) translateY(10px);
+    background-position: 0% 100%;
+  }
+}
+
+/* Efek 3D dengan perspektif */
+.wave-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.05) 50%,
+    transparent 70%
+  );
+  animation: shimmer 6s ease-in-out infinite;
+  z-index: 1;
+}
+
+@keyframes shimmer {
+  0%, 100% {
+    transform: translateX(-100%) skewX(-15deg);
+  }
+  50% {
+    transform: translateX(100%) skewX(-15deg);
+  }
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .wave {
+    width: 300%;
+    animation-duration: 6s;
+  }
+  
+  .wave1 { animation-duration: 6s; }
+  .wave2 { animation-duration: 8s; }
+  .wave3 { animation-duration: 10s; }
+  .wave4 { animation-duration: 12s; }
+}
+
+@media screen and (max-width: 350px) {
+  .wave {
+    width: 400%;
+    animation-duration: 4s;
+  }
+  
+  .wave1 { animation-duration: 4s; }
+  .wave2 { animation-duration: 6s; }
+  .wave3 { animation-duration: 8s; }
+  .wave4 { animation-duration: 10s; }
+}
