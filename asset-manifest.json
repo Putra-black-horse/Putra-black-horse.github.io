@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fcb5a8b4.css",
+    "main.js": "/static/js/main.d82db058.js",
+    "static/media/Blue_Yellow_Illustrative_Back_To_School_Banner.png": "/static/media/Blue_Yellow_Illustrative_Back_To_School_Banner.9ba3982a74ebdb17a2e7.png",
+    "static/media/3D Drink Design.png": "/static/media/3D Drink Design.a2382b42727ee042b7c7.png",
+    "static/media/fotoijazah.png": "/static/media/fotoijazah.0633d89f81314f0cea30.png",
+    "static/media/CV_Putra_sawung_Jagad.pdf": "/static/media/CV_Putra_sawung_Jagad.e3da00d56c4afa510c35.pdf",
+    "static/media/fotoassetshopease2.png": "/static/media/fotoassetshopease2.9ef0e577ab842d4667b2.png",
+    "static/media/certifikat2.png": "/static/media/certifikat2.f09d30bbe3f57fe3be26.png",
+    "static/media/petualanganpintar2.png": "/static/media/petualanganpintar2.25eb3a78f8b1c343764a.png",
+    "static/media/certificate1.png": "/static/media/certificate1.fc98749847d0e0e2b376.png",
+    "static/media/criptera.png": "/static/media/criptera.76b0272e577fe7dc17b2.png",
+    "static/media/sertifikat_pkl.png": "/static/media/sertifikat_pkl.0483583196d9030c5bf4.png",
+    "index.html": "/index.html",
+    "main.fcb5a8b4.css.map": "/static/css/main.fcb5a8b4.css.map",
+    "main.d82db058.js.map": "/static/js/main.d82db058.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fcb5a8b4.css",
+    "static/js/main.d82db058.js"
+  ]
+}
