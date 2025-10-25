@@ -3,6 +3,8 @@ import Work2  from "../../assets/3D Drink Design.png";
 import Work3  from "../../assets/Blue_Yellow_Illustrative_Back_To_School_Banner.png";
 import Work4  from "../../assets/petualanganpintar2.png";
 import Work5  from "../../assets/criptera.png";
+import Work6  from "../../assets/poscafe.png";
+
 
 export const projectsData = [
   {
@@ -39,6 +41,13 @@ export const projectsData = [
     title: "App Crypto Wallet",
     category: "design",
     link: "https://www.figma.com/design/elWYsTW6ZMqcfnFOnLp5cp/Crypto-Wallet-App-UI-Template--Community-?node-id=0-1&t=NJlcrfKg9pbesX14-1https://www.figma.com/design/elWYsTW6ZMqcfnFOnLp5cp/Crypto-Wallet-App-UI-Template--Community-?node-id=0-1&t=NJlcrfKg9pbesX14-1", // Tambahkan link atau ganti dengan URL yang sesuai
+  },
+  {
+    id: 6,
+    image: Work6,
+    title: "PosCafe",
+    category: "web",
+    link: "https://github.com/Putra-black-horse/PosCafe", // Tambahkan link atau ganti dengan URL yang sesuai
   },
 ];
 
